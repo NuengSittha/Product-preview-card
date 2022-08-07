@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+  
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: hsl(30, 38%, 92%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .container  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 14px);
+        width: 100%;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .box-left {
+        max-width: 300px;
+    }
+
+    .box-left img {
+        width: 100%;
+    }
+
+    .box-right {
+        background: hsl(0, 0%, 100%);
+        padding: 2rem 2rem;
+        max-width: 300px;
+    }
+    .box-right h3 {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        color: hsl(228, 12%, 48%);
+    }
+    .box-right h1 {
+        font-size: 2rem;
+        line-height: 1;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+
+    .box-right p {
+        margin-top: 1.5rem;
+        line-height: 1.6;
+        color: hsl(228, 12%, 48%);
+    }
+
+    .price-box {
+        margin-top: .8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .price-box .price {
+        color: hsl(158, 36%, 37%);
+    }
+
+    .price-box .price-sale {
+        text-decoration-line: line-through;
+        margin: 0;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+
+    .btn {
+        margin-top: .5rem;
+    }
+
+    .btn  button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        border: none;
+        padding: .9rem 0;
+        border-radius: 10px;
+        background: hsl(158, 36%, 37%);
+        text-align: center;
+    }
+
+    .btn button img {
+        margin-right: 10px;
+    }
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <div class="box-left">
+                    <img src="images/image-product-desktop.jpg">
+                </div>
+                <div class="box-right">
+                    <h3>PERFUME</h3>
+                    <h1>Gabrielle Essence Eau De Parfum</h1>
+                    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                        Perfumer-Creator for the House of CHANEL.</p>
+                    <div class="price-box">
+                        <h1 class="price">$149.99</h1>
+                        <p class="price-sale">$169.99</p>
+                    </div>
+                    <div class="btn">
+                        <button type="button"> <img src="images/icon-cart.svg"> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+  <!-- Preview -->
+
+  
+
+
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://bio.link/nueng">Nueng Sittha</a>.
+  </div>
+</body>
+</html>
